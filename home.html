@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ImageMapPro Test</title>
+        
+        <!-- ImageMapPro CSS -->
+        <link rel="stylesheet" href="image-map-pro.min.css" />
+        
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+        <!-- ImageMapPro JS -->
+        <script src="image-map-pro.min.js"></script>
+    </head>
+    <body>
+        
+        <h1>Testing My Map</h1>
+        <div id="my-map" style="width: 100%; height: 600px;"></div>
+        
+        <script>
+    fetch('test-map.json')
+      .then(response => response.json())
+      .then(config => {
+        $('#my-map').imageMapPro(config);
+      })
+      .catch(error => {
+        console.error('Error loading map:', error);
+      });
+  </script>
+        
+    </body>
+</html>
