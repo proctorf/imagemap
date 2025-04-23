@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xsl-stylesheet type="text/xsl" href="student.xsl"?>
+
+
+
+<xml>
+    <student>
+        <forename>Frank</forename>
+        <midName>Tolbert</midName>
+        <lastName>Proctor</lastName>
+        <suffix>III</suffix>
+    </student>
+</xml>
+</xml-stylesheet>
